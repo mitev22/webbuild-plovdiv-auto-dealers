@@ -1,0 +1,31 @@
+.filters { display: flex; gap: 22px; flex-wrap: wrap; padding-bottom: 14px;
+  border-bottom: 1px solid var(--ink); }
+.filters a { font-size: 14px; color: var(--mute); padding-bottom: 3px; border-bottom: 1px solid transparent; }
+.filters a.on { color: var(--ink); border-bottom-color: var(--brass); }
+.filters a:hover { color: var(--ink); }
+.meta-row { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+  padding: 14px 0 clamp(20px,2.6vw,34px); font-size: 13.5px; color: var(--mute); }
+.cars { display: grid; grid-template-columns: repeat(3,1fr); gap: clamp(14px,1.8vw,26px); }
+.car { background: var(--card); border: 1px solid var(--edge); display: flex; flex-direction: column;
+  transition: border-color .25s, transform .25s; color: inherit; }
+.car:hover { border-color: rgba(110,82,30,.55); transform: translateY(-2px); }
+.car:hover h2 { color: var(--brass); }
+.car .pic { position: relative; aspect-ratio: 16/10; background: linear-gradient(180deg,#E4DACA,#C8BCA5); }
+.car .b { padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 12px; flex: 1; }
+.car h2 { font-size: 18px; font-weight: 600; transition: color .2s; }
+.car .money { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+.car .money b { font-family: var(--display); font-weight: 300; font-size: 23px; letter-spacing: -.02em; }
+.car .money small { font-size: 12.5px; color: var(--mute); }
+.car dl { display: grid; grid-template-columns: repeat(3,1fr); border-top: 1px solid var(--edge2); margin-top: auto; }
+.car dl > div { padding: 11px 0 0; }
+.car dl > div + div { border-left: 1px solid var(--edge2); padding-left: 13px; }
+.car dt { font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--mute); }
+.car dd { font-size: 13.5px; font-variant-numeric: tabular-nums; margin-top: 2px; }
+.car .flag { position: absolute; top: 0; left: 0; z-index: 3; background: var(--brass); color: #FFF8EA;
+  font-size: 11px; letter-spacing: .13em; text-transform: uppercase; padding: 5px 10px; }
+.empty { border: 1px solid var(--edge); background: var(--card); padding: clamp(30px,4vw,58px);
+  text-align: center; }
+.empty h2 { font-family: var(--display); font-weight: 300; font-size: 24px; letter-spacing: -.018em; }
+.empty p { color: var(--mute); margin-top: 10px; }
+@media (max-width: 1000px) { .cars { grid-template-columns: repeat(2,1fr); } }
+@media (max-width: 620px) { .cars { grid-template-columns: 1fr; } .filters { overflow-x: auto; } }

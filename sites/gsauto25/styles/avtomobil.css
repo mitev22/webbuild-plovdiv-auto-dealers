@@ -1,0 +1,80 @@
+.trail { display: flex; gap: 10px; padding: 16px 0 0; font-size: 13.5px; color: var(--mute); }
+.trail i { font-style: normal; color: var(--edge); }
+.trail a:hover { color: var(--brass); }
+.lead { margin-top: clamp(14px,2vw,26px); }
+.lead .frame { position: relative; width: 100%; aspect-ratio: 21/9; min-height: min(300px,44vw);
+  background: linear-gradient(180deg,#E4DACA,#C3B7A0); }
+.lead .frame .gslide .stand svg { width: min(72%,860px); filter: drop-shadow(0 26px 22px rgba(50,40,26,.34)); }
+.strip { display: flex; gap: 6px; overflow-x: auto; padding-top: 6px; }
+.thumb { position: relative; flex: 0 0 clamp(112px,13vw,178px); aspect-ratio: 4/3; border: 0; padding: 0;
+  cursor: pointer; background: linear-gradient(180deg,#E4DACA,#CBBFA9); opacity: .62; transition: opacity .25s; }
+.thumb .stand svg { width: 88%; }
+.thumb:hover { opacity: .9; }
+.thumb[aria-current="true"] { opacity: 1; box-shadow: inset 0 -2px 0 var(--ink); }
+.thumb .cap { position: absolute; left: 0; right: 0; bottom: 0; z-index: 3; padding: 4px 7px;
+  font-size: 11px; color: #fff; background: linear-gradient(180deg,transparent,rgba(22,20,18,.7)); text-align: left; }
+.lead .meta { display: flex; justify-content: space-between; align-items: baseline; gap: 16px;
+  flex-wrap: wrap; padding-top: 10px; font-size: 13.5px; color: var(--mute); }
+.head2 { display: grid; grid-template-columns: minmax(0,1.3fr) minmax(0,1fr); gap: clamp(24px,4vw,64px);
+  padding: clamp(34px,4.4vw,72px) 0 clamp(24px,3vw,44px); align-items: start; }
+.head2 h1 { font-family: var(--display); font-weight: 200; font-size: clamp(28px,3.9vw,52px);
+  letter-spacing: -.024em; line-height: 1.08; }
+.head2 .sub { color: var(--mute); margin-top: 16px; max-width: 50ch; }
+.ask { border-top: 1px solid var(--ink); padding-top: 18px; }
+.ask .price { font-family: var(--display); font-weight: 300; font-size: clamp(32px,4.2vw,50px);
+  letter-spacing: -.026em; line-height: 1; }
+.ask .vat { font-size: 13.5px; color: var(--mute); margin-top: 8px; }
+.ask .fin { font-size: 14.5px; color: var(--mute); margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--edge2); }
+.ask .fin b { color: var(--ink); font-weight: 600; }
+.ask .acts { display: flex; flex-direction: column; gap: 9px; margin-top: 20px; }
+.file { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); background: var(--card); border: 1px solid var(--edge); }
+.file section { padding: clamp(20px,2.8vw,36px); }
+.file section + section { border-left: 1px solid var(--edge); }
+.file h2 { font-size: 11.5px; letter-spacing: .22em; text-transform: uppercase; color: var(--mute);
+  padding-bottom: 11px; border-bottom: 1px solid var(--ink); }
+.file .r { display: grid; grid-template-columns: minmax(128px,.78fr) 1fr; gap: 14px; padding: 12px 0;
+  border-bottom: 1px solid var(--edge2); }
+.file .k { color: var(--mute); font-size: 13px; letter-spacing: .07em; text-transform: uppercase; }
+.file .v { font-weight: 600; }
+.file .v.ok { color: var(--ok); }
+.checks { position: relative; margin-top: clamp(28px,3.4vw,52px); display: grid;
+  grid-template-columns: minmax(0,.85fr) minmax(0,1.15fr); background: var(--card); border: 1px solid var(--edge); }
+.checks .cl { padding: clamp(22px,3vw,40px); border-right: 1px solid var(--edge); }
+.checks h2 { font-family: var(--display); font-weight: 200; font-size: clamp(23px,3vw,36px);
+  letter-spacing: -.022em; line-height: 1.1; }
+.checks p { color: var(--mute); margin-top: 14px; max-width: 38ch; }
+.stamp { position: absolute; right: -10px; top: -16px; width: clamp(100px,11vw,136px); height: clamp(100px,11vw,136px);
+  border: 2px solid var(--brass); border-radius: 50%; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 2px; transform: rotate(-10deg); color: var(--brass);
+  text-align: center; background: var(--shell); z-index: 3; }
+.stamp b { font-family: var(--display); font-weight: 300; font-size: clamp(13px,1.4vw,16px);
+  letter-spacing: .02em; line-height: 1.05; text-transform: uppercase; }
+.stamp span { font-size: 11px; letter-spacing: .16em; text-transform: uppercase; }
+.stamp::after { content: ""; position: absolute; inset: 7px; border: 1px solid var(--brass); border-radius: 50%; opacity: .5; }
+.clist { padding: clamp(10px,1.6vw,20px) clamp(22px,3vw,40px) clamp(22px,3vw,34px); }
+.clist div { display: grid; grid-template-columns: minmax(124px,auto) 1fr; gap: 18px; padding: 15px 0;
+  border-bottom: 1px solid var(--edge2); align-items: baseline; }
+.clist b { font-size: 12.5px; letter-spacing: .16em; text-transform: uppercase; color: var(--brass); font-weight: 500; }
+.clist span { color: #403B34; }
+.clist em { font-style: normal; color: var(--ok); font-weight: 600; }
+.two { display: grid; grid-template-columns: minmax(0,1.3fr) minmax(0,1fr); gap: clamp(24px,3.6vw,60px);
+  margin-top: clamp(28px,3.4vw,52px); }
+.two h2 { font-family: var(--display); font-weight: 300; font-size: clamp(20px,2.5vw,29px);
+  letter-spacing: -.018em; padding-bottom: 12px; border-bottom: 1px solid var(--edge); }
+.equip { columns: 2; column-gap: 34px; margin-top: 2px; }
+.equip li { break-inside: avoid; padding: 11px 0; border-bottom: 1px solid var(--edge2); font-size: 15.5px; color: #3C372F; }
+.more { padding: clamp(34px,4.2vw,64px) 0 clamp(30px,3.6vw,52px); }
+.more h2 { font-family: var(--display); font-weight: 300; font-size: clamp(20px,2.5vw,29px);
+  letter-spacing: -.018em; padding-bottom: 12px; border-bottom: 1px solid var(--edge); }
+.more-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: clamp(12px,1.6vw,22px); padding-top: clamp(12px,1.6vw,22px); }
+.mi .pic { position: relative; aspect-ratio: 16/9; background: linear-gradient(180deg,#E4DACA,#C8BCA5); }
+.mi .t { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding-top: 12px; }
+.mi h3 { font-size: 16.5px; font-weight: 600; }
+.mi .p { font-family: var(--display); font-weight: 300; font-size: 18px; letter-spacing: -.02em; white-space: nowrap; }
+.mi .s { margin-top: 6px; font-size: 13.5px; color: var(--mute); }
+@media (max-width: 1000px) { .head2, .file, .checks, .two, .more-grid { grid-template-columns: 1fr; }
+  .file section + section { border-left: 0; border-top: 1px solid var(--edge); }
+  .checks .cl { border-right: 0; border-bottom: 1px solid var(--edge); }
+  .more-grid { grid-template-columns: repeat(2,1fr); } .equip { columns: 1; } }
+@media (max-width: 620px) { .file .r, .clist div { grid-template-columns: 1fr; gap: 3px; }
+  .more-grid { grid-template-columns: 1fr; } .stamp { width: 88px; height: 88px; } }

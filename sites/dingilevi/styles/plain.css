@@ -1,0 +1,44 @@
+.hero-shot { position: relative; width: 100%; aspect-ratio: 21/8; min-height: min(260px,42vw);
+  background: linear-gradient(180deg,#E4DACA,#C3B7A0); margin-top: clamp(10px,1.6vw,20px); }
+.hero-shot .stand svg { width: min(72%,820px); filter: drop-shadow(0 22px 20px rgba(50,40,26,.32)); }
+.block { padding: clamp(34px,4.4vw,72px) 0 0; }
+.block h2 { font-family: var(--display); font-weight: 300; font-size: clamp(21px,2.6vw,32px);
+  letter-spacing: -.02em; padding-bottom: 12px; border-bottom: 1px solid var(--edge); }
+.steps { border-top: 1px solid var(--edge); margin-top: 4px; }
+.steps > div { display: grid; grid-template-columns: minmax(150px,auto) 1fr; gap: 22px; padding: 20px 0;
+  border-bottom: 1px solid var(--edge2); align-items: baseline; }
+.steps b { font-family: var(--display); font-weight: 300; font-size: 17px; letter-spacing: -.015em; }
+.steps span { color: var(--mute); }
+.pricelist { border-top: 1px solid var(--edge); margin-top: 4px; }
+.pricelist > div { display: grid; grid-template-columns: 1fr auto; gap: 20px; padding: 14px 0;
+  border-bottom: 1px solid var(--edge2); align-items: baseline; }
+.pricelist span { font-size: 15.5px; }
+.pricelist b { font-family: var(--display); font-weight: 300; font-size: 17px;
+  letter-spacing: -.015em; font-variant-numeric: tabular-nums; white-space: nowrap; text-align: right; }
+form.ask-form { background: var(--card); border: 1px solid var(--edge); padding: clamp(20px,2.8vw,34px); }
+form.ask-form h3 { font-family: var(--display); font-weight: 300; font-size: 20px; letter-spacing: -.018em; }
+form.ask-form p.hint { color: var(--mute); font-size: 14.5px; margin-top: 8px; }
+.field { display: block; margin-top: 16px; }
+.field span { display: block; font-size: 12px; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--mute); margin-bottom: 6px; }
+.field input, .field textarea, .field select { width: 100%; background: var(--shell);
+  border: 1px solid var(--edge); padding: 12px 13px; font-size: 16px; color: var(--ink); }
+.field input:focus, .field textarea:focus, .field select:focus { border-color: var(--brass); outline: none; }
+.field textarea { min-height: 110px; resize: vertical; }
+form.ask-form .solid { margin-top: 20px; width: 100%; }
+.contact-grid { display: grid; grid-template-columns: minmax(0,.9fr) minmax(0,1.1fr); gap: clamp(24px,4vw,60px); }
+.plan { position: relative; aspect-ratio: 4/3; width: 100%; background: var(--card); border: 1px solid var(--edge); overflow: hidden; }
+.plan svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.plan .pin { position: absolute; left: 47%; top: 44%; width: 15px; height: 15px; border-radius: 50%;
+  background: var(--brass); box-shadow: 0 0 0 6px rgba(110,82,30,.18); }
+.plan .lbl { position: absolute; left: 50%; top: 44%; transform: translate(14px,-50%); font-size: 13px;
+  background: var(--shell); padding: 4px 9px; border: 1px solid var(--edge); }
+.plan iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.hours { border-top: 1px solid var(--edge); margin-top: 22px; }
+.hours > div { display: grid; grid-template-columns: 1fr auto; gap: 16px; padding: 12px 0;
+  border-bottom: 1px solid var(--edge2); }
+.hours span:last-child { font-variant-numeric: tabular-nums; color: var(--mute); }
+@media (max-width: 1000px) { .contact-grid { grid-template-columns: 1fr; } }
+@media (max-width: 620px) { .steps > div, .hours > div { grid-template-columns: 1fr; gap: 4px; }
+  .pricelist > div { grid-template-columns: 1fr; gap: 4px; }
+  .pricelist b { white-space: normal; text-align: left; } }

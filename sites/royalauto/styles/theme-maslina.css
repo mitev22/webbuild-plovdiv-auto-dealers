@@ -1,0 +1,6 @@
+:root{
+  --shell:#DEE0D3; --shell2:#CFD2C2; --card:#EBEDE1; --night:#171A13;
+  --ink:#14170F; --mute:#4F5546; --brass:#4F6127; --brassLt:#A6B878; --ok:#2F5A38;
+  --edge:color-mix(in srgb, #14170F 18%, transparent);
+  --edge2:color-mix(in srgb, #14170F 10%, transparent);
+}
