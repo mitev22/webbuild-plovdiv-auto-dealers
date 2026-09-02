@@ -164,7 +164,10 @@ def main():
         for s in stock:
             if re.search(pattern, s["title"], re.I): return s["photos"][k][0]
         return stock[0]["photos"][0][0]
-    home_stage = find(r'Arteon')
+    # entry photo: chosen by eye from the contact sheet (the yard with the rows of cars behind)
+    hero_src = os.environ.get("HERO_SRC") or '/private/tmp/claude-501/-Users-dimitarmitev-Vault/a877254d-78a2-405c-8f79-1450d3019371/scratchpad/harvest2/kris-car/photos/11752849346767657/10.webp'
+    compress(hero_src, os.path.join(assets, "hero.webp"), 1800, 74)
+    home_stage = "hero.webp"
     about_stage = find(r'Megane SEDAN')
     buy_shot = find(r'Corolla EXECUTIVE')
     # Open Graph card from the home stage photo

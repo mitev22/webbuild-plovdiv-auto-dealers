@@ -4320,7 +4320,7 @@ export default {
  ],
  "images": {
   "homeStage": [
-   "01-00.webp",
+   "hero.webp",
    "Дворът на Крис Кар в Пловдив"
   ],
   "aboutStage": [
@@ -4328,7 +4328,7 @@ export default {
    "Автомобил от наличностите на Крис Кар"
   ],
   "serviceShot": [
-   "01-00.webp",
+   "hero.webp",
    "Автомобил от наличностите"
   ],
   "buyShot": [
