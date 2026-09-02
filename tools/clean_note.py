@@ -23,7 +23,15 @@ TAIL = re.compile(
 GLYPHS = re.compile(r'[•‣▪▫●■◦★☆'
                     r'✔✓➤➔»«→►▶❖✶]+')
 RULE = re.compile(r'[_\-=~\.]{4,}')          # ______ / ------ / ...... rules
-SPACED_BANG = re.compile(r'\s*([!?])(?:\s*[!?])+')   # "! ! !" and "! !! !"
+# A run of sentence marks, however the dealer spaced them: "! ! !", ". . .", "! . !".
+# Emphasis markers become full stops mid-run, so this has to cope with mixed runs, and
+# it has to run again after the spacing rules, which can push two marks back together.
+PUNCT_RUN = re.compile(r'([.!?])(?:\s*[.!?])+')
+
+
+def _one_mark(m):
+    run = m.group(0)
+    return "!" if "!" in run else ("?" if "?" in run else ".")
 
 
 def clean_note(text, max_chars=240):
@@ -49,13 +57,12 @@ def clean_note(text, max_chars=240):
     s = s.replace("*", " ")
     s = GLYPHS.sub(". ", s)
     s = RULE.sub(". ", s)
-    s = SPACED_BANG.sub(r"\1", s)            # "! ! !" -> "!"
+    s = PUNCT_RUN.sub(_one_mark, s)
     s = re.sub(r'(\d)\.\s+(\d)', r'\1.\2', s)        # "2. 0" -> "2.0"
     s = re.sub(r'\s+([,.;:!?])', r'\1', s)           # " ," -> ","
     s = re.sub(r'([,.;:!?])(?=[^\s\d])', r'\1 ', s)  # "състояние.Всичко" -> ". В"
-    s = re.sub(r'\.\s*(?:\.\s*)+', '. ', s)          # ". . ." -> ". "
-    s = re.sub(r'([!?.])\s*\.(?=\s|$)', r'\1', s)   # a bullet's "." landing after "!"
-    s = re.sub(r'\.\s*([,;:])', r'\1', s)           # ". ," -> ",""
+    s = re.sub(r'[.!?]\s*([,;:])', r'\1', s)         # ". ," -> ","
+    s = PUNCT_RUN.sub(_one_mark, s)                  # spacing rules can re-adjoin marks
     s = re.sub(r'\s+', ' ', s).strip()
     s = re.sub(r'^[\s.,;:!?/|-]+', '', s)            # leading punctuation left behind
 
@@ -115,6 +122,9 @@ TESTS = [
     ("*** _________________ ***", ""),
     ("Г", ""),
     ("&#9702; &#9702; !!!", ""),
+    # an emphasis marker splitting an exclamation run must not leave "! !" behind
+    ("НОВИ ГУМИ PIRELLI SCORPION 235/60/R18 ! ! ! * ** ! !360 ГРАДУСОВИ КАМЕРИ!",
+     "НОВИ ГУМИ PIRELLI SCORPION 235/60/R18!360 ГРАДУСОВИ КАМЕРИ!"),
     ("", ""),
     ("Виж всички обяви в x.mobile.bg Контакти с продавача X", ""),
 ]
@@ -126,5 +136,11 @@ if __name__ == "__main__":
         if got != want:
             bad += 1
             print("FAIL\n  in:   %r\n  want: %r\n  got:  %r" % (src[:90], want, got))
+        # Cleaning an already-clean note must be a no-op. Without this the rules can
+        # fight each other: an emphasis marker split a "! ! !" run and the collision
+        # rule then rejoined the halves into "! !" on the next pass.
+        if got and clean_note(got) != got:
+            bad += 1
+            print("NOT IDEMPOTENT\n  once:  %r\n  twice: %r" % (got, clean_note(got)))
     print(("%d/%d passed" % (len(TESTS) - bad, len(TESTS))) if not bad else "%d FAILED" % bad)
     raise SystemExit(1 if bad else 0)
