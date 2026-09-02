@@ -101,14 +101,14 @@ a { color: inherit; text-decoration: none; }
 .rows { border-top: 1px solid var(--edge); }
 .rows > div { display: grid; grid-template-columns: minmax(112px,auto) 1fr; gap: 20px;
   padding: 15px 0; border-bottom: 1px solid var(--edge2); align-items: baseline; }
-.rows b { font-size: 13.5px; color: var(--brass); font-weight: 500; }
+.rows b { font-size: 12.5px; letter-spacing: .16em; text-transform: uppercase; color: var(--brass); font-weight: 500; }
 .rows span { color: #403B34; }
 .figures { display: flex; flex-wrap: wrap; border-top: 1px solid var(--edge); }
 .figures div { padding: 16px 30px 4px 0; }
 .figures div + div { border-left: 1px solid var(--edge); padding-left: 30px; }
 .figures b { display: block; font-family: var(--display); font-weight: 300;
   font-size: clamp(26px,3.2vw,40px); line-height: 1; letter-spacing: -.022em; }
-.figures span { font-size: 13.5px; color: var(--mute); }
+.figures span { font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--mute); }
 .note { background: var(--card); border: 1px solid var(--edge); padding: clamp(18px,2.4vw,28px); }
 .note h3 { font-family: var(--display); font-weight: 300; font-size: 18px; letter-spacing: -.015em; }
 .note p { color: var(--mute); margin-top: 10px; font-size: 15.5px; }
@@ -125,7 +125,8 @@ a { color: inherit; text-decoration: none; }
 .close .lines { border-top: 1px solid rgba(237,231,220,.2); }
 .close .lines div { padding: 15px 0; border-bottom: 1px solid rgba(237,231,220,.2);
   display: grid; grid-template-columns: minmax(108px,auto) 1fr; gap: 20px; align-items: baseline; }
-.close .lines b { font-size: 13.5px; color: var(--brassLt); font-weight: 500; }
+.close .lines b { font-size: 12.5px; letter-spacing: .16em; text-transform: uppercase;
+  color: var(--brassLt); font-weight: 400; }
 .close .lines span { color: #C6BEB2; }
 .close .go { color: #EDE7DC; border-bottom-color: var(--brassLt); margin-top: 20px; }
 
@@ -134,7 +135,8 @@ a { color: inherit; text-decoration: none; }
   display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 30px; font-size: 14.5px; }
 .foot b.w { font-family: var(--display); font-weight: 300; font-size: 17px;
   letter-spacing: .26em; text-transform: uppercase; color: #EDE7DC; }
-.foot h2 { font-size: 13.5px; color: var(--brassLt); margin-bottom: 9px; font-family: var(--text); font-weight: 600; }
+.foot h2 { font-size: 11.5px; letter-spacing: .2em; text-transform: uppercase;
+  color: var(--brassLt); margin-bottom: 9px; font-family: var(--text); font-weight: 600; }
 .foot li { padding: 6px 0; }
 .foot a:hover { color: #EDE7DC; }
 .foot .legal { grid-column: 1/-1; border-top: 1px solid rgba(237,231,220,.14);
@@ -182,12 +184,8 @@ a { color: inherit; text-decoration: none; }
 .themebar { position: fixed; right: 18px; bottom: 18px; z-index: 60; display: flex; align-items: center;
   gap: 4px; padding: 7px 8px 7px 14px; background: var(--night); color: #EDE7DC;
   box-shadow: 0 10px 30px rgba(0,0,0,.28); }
-.themebar > span { font-size: 12.5px; color: var(--brassLt); padding-right: 8px; }
-.themebar .tb { display: none; align-items: center; gap: 8px; background: none; border: 0; color: #EDE7DC;
-  font-size: 13px; padding: 7px 12px 7px 8px; cursor: pointer; }
-.themebar.min { padding: 4px 6px; }
-.themebar.min .tb { display: inline-flex; }
-.themebar.min > span, .themebar.min button[data-theme] { display: none; }
+.themebar > span { font-size: 11px; letter-spacing: .16em; text-transform: uppercase;
+  color: var(--brassLt); padding-right: 8px; }
 .themebar button { display: inline-flex; align-items: center; gap: 7px; background: none; border: 0;
   color: rgba(237,231,220,.72); font-size: 13px; padding: 7px 11px; cursor: pointer; }
 .themebar button:hover { color: #fff; }
@@ -196,7 +194,6 @@ a { color: inherit; text-decoration: none; }
 @media (max-width: 900px) {
   .themebar { right: 10px; left: 10px; bottom: 10px; justify-content: center; padding: 7px 6px; }
   .themebar > span { display: none; }
-  .themebar.min { left: auto; right: 10px; }
   .themebar button { padding: 8px 9px; font-size: 12.5px; }
 }
 @media (max-width: 620px) { body.has-callbar .themebar { bottom: 74px; } }

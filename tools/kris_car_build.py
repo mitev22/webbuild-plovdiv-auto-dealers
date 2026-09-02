@@ -131,8 +131,6 @@ def main():
             compress(src, os.path.join(assets, out), 1280 if j == 0 else 1000, 70 if j == 0 else 60)
             photos.append([out, f"Снимка {j+1} на автомобила"])
         compress(os.path.join(c["_dir"], order[0]), os.path.join(assets, f"{cid}-t.webp"), 720, 64)
-        if len(order) > 1:
-            compress(os.path.join(c["_dir"], order[1]), os.path.join(assets, f"{cid}-t2.webp"), 720, 64)
         covers[cid] = os.path.join(c["_dir"], order[0])
         title = clean_title(c["title"])
         brand, model = brand_model(title)
@@ -152,7 +150,7 @@ def main():
             "colour": (c.get("colour") or "—").strip(),
             "importedFrom": "Купена нова в България" if re.search(r'българия', hay) else "—",
             "owners": "Един" if re.search(r'първи собственик|един собственик', hay) else "—",
-            "photos": photos, "thumb": f"{cid}-t.webp", "thumb2": f"{cid}-t2.webp" if len(order) > 1 else None,
+            "photos": photos, "thumb": f"{cid}-t.webp",
             "tags": tags_for(c),
         }
         if note: entry["note"] = note
@@ -169,7 +167,6 @@ def main():
     home_stage = find(r'Arteon')
     about_stage = find(r'Megane SEDAN')
     buy_shot = find(r'Corolla EXECUTIVE')
-    checks_shot = find(r'Passat')
     # Open Graph card from the home stage photo
     og = Image.open(os.path.join(assets, home_stage)).convert("RGB")
     w, h = og.size; th = int(w * 630 / 1200)
@@ -265,15 +262,6 @@ def main():
             "buyTradeIn": True,
             "buyTradeInH2": "Замяна срещу кола от двора",
             "buyTradeInLead": f"Вашият автомобил се приспада от цената. Изберете от {len(stock)} автомобила на сайта и елате с двете коли на оглед.",
-            "figures": [[str(n_listings), "автомобила на двора"], ["2005", "на пазара от"], ["7", "дни в седмицата отворено"], ["4,6", "от 5 в Google, 96 отзива"]],
-            "plotNote": f"{len(stock)} автомобила на сайта, всеки със снимки и досие. Пълният двор е {n_listings}.",
-            "freshH2": "Новите на двора",
-            "freshLead": "Последните обяви. Задръжте върху снимката за втори кадър.",
-            "brandsH2": "По марки",
-            "brandsLead": "Изберете марка и списъкът се филтрира.",
-            "featLabel": "Най-новата обява",
-            "teaserBuy": "Приемаме автомобили за изкупуване и замяна. Вашата кола се приспада от цената.",
-            "landingAlt": True,
             "contactH1": "Елате на двора. Отворено е всеки ден.",
             "contactLead": "Понеделник до петък от 9 до 19 часа, събота от 9:30, неделя от 10 до 16. Ако идвате за конкретна кола, обадете се предварително, за да е сигурно, че е на двора.",
         },
@@ -290,7 +278,6 @@ def main():
             "aboutStage": [about_stage, "Автомобил от наличностите на Крис Кар"],
             "serviceShot": [home_stage, "Автомобил от наличностите"],
             "buyShot": [buy_shot, "Автомобил от наличностите на Крис Кар"],
-            "checksShot": [checks_shot, "Дворът на Цариградско шосе"],
         },
         "promises": [
             ["Оглед", "Цариградско шосе, до бензиностанция Алпи. Всеки ден."],

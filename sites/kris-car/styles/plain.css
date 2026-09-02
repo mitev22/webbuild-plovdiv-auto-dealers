@@ -19,7 +19,8 @@ form.ask-form { background: var(--card); border: 1px solid var(--edge); padding:
 form.ask-form h3 { font-family: var(--display); font-weight: 300; font-size: 20px; letter-spacing: -.018em; }
 form.ask-form p.hint { color: var(--mute); font-size: 14.5px; margin-top: 8px; }
 .field { display: block; margin-top: 16px; }
-.field span { display: block; font-size: 13.5px; color: var(--mute); margin-bottom: 6px; }
+.field span { display: block; font-size: 12px; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--mute); margin-bottom: 6px; }
 .field input, .field textarea, .field select { width: 100%; background: var(--shell);
   border: 1px solid var(--edge); padding: 12px 13px; font-size: 16px; color: var(--ink); }
 .field input:focus, .field textarea:focus, .field select:focus { border-color: var(--brass); outline: none; }
