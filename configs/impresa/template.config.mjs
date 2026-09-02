@@ -215,7 +215,7 @@ export default {
      "Снимка 8 на автомобила"
     ]
    ],
-   "note": "Нов внос от Италия лизинг чрез лизингова компания. Отлично състояние Виж всички обяви в impresa.bazar.bg и impresa.mobile.bg Контакти с продавача Impresa 21",
+   "note": "Нов внос от Италия лизинг чрез лизингова компания. Отлично състояние.",
    "equipment": [
     "Apple CarPlay \\ Android Auto",
     "Auto Start Stop function",
@@ -299,7 +299,7 @@ export default {
      "Снимка 8 на автомобила"
     ]
    ],
-   "note": "Нов внос от Италия лизинг чрез лизингова компания Виж всички обяви в impresa.bazar.bg и impresa.mobile.bg Контакти с продавача Impresa 21",
+   "note": "Нов внос от Италия лизинг чрез лизингова компания.",
    "equipment": [
     "Auto Start Stop function",
     "Bluetooth \\ handsfree система",
@@ -364,7 +364,7 @@ export default {
      "Снимка 8 на автомобила"
     ]
    ],
-   "note": "Нов внос от Италия лизинг чрез лизингова компания Виж всички обяви в impresa.bazar.bg и impresa.mobile.bg Контакти с продавача Impresa 21",
+   "note": "Нов внос от Италия лизинг чрез лизингова компания.",
    "equipment": [
     "Apple CarPlay \\ Android Auto",
     "Auto Start Stop function",
@@ -429,7 +429,7 @@ export default {
      "Снимка 8 на автомобила"
     ]
    ],
-   "note": "Нов внос от Италия лизинг чрез лизингова компания Виж всички обяви в impresa.bazar.bg и impresa.mobile.bg Контакти с продавача Impresa 21",
+   "note": "Нов внос от Италия лизинг чрез лизингова компания.",
    "equipment": [
     "Auto Start Stop function",
     "Bluetooth \\ handsfree система",
@@ -494,7 +494,7 @@ export default {
      "Снимка 8 на автомобила"
     ]
    ],
-   "note": "Нов внос от Италия лизинг чрез лизингова компания Виж всички обяви в impresa.bazar.bg и impresa.mobile.bg Контакти с продавача Impresa 21",
+   "note": "Нов внос от Италия лизинг чрез лизингова компания.",
    "equipment": [
     "Auto Start Stop function",
     "Bluetooth \\ handsfree система",
@@ -559,7 +559,7 @@ export default {
      "Снимка 8 на автомобила"
     ]
    ],
-   "note": "Нов внос от Италия лизинг чрез лизингова компания. Виж всички обяви в impresa.bazar.bg и impresa.mobile.bg Контакти с продавача Impresa 21",
+   "note": "Нов внос от Италия лизинг чрез лизингова компания.",
    "equipment": [
     "Auto Start Stop function",
     "Bluetooth \\ handsfree система",

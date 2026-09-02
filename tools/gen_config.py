@@ -5,6 +5,8 @@ Everything written is either harvested fact (dealer's own listings) or
 process-generic wording that is true for any dealer. No invented claims.
 """
 import html, io, json, os, re, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from clean_note import clean_note
 from PIL import Image
 
 HARVEST = os.path.expanduser("~/Desktop/web-agency/_harvest/plovdiv-auto-dealers")
@@ -111,7 +113,7 @@ def gen(slug, ledger_row, theme, assets_dir):
             compress(src, os.path.join(assets_dir, fn), 1280 if j == 0 else 1000, 70 if j == 0 else 60)
             photos.append([fn, "Снимка " + str(j + 1) + " на автомобила"])
         title = re.sub(r'\s+', ' ', car["title"]).strip()[:58]
-        note_src = (car.get("note") or "").strip()
+        note_src = clean_note(car.get("note") or "")
         hay = (title + " " + note_src).lower()
         drive = "4x4" if re.search(r'4x4|4х4|quattro|xdrive|4motion|awd|4 x 4', hay) else "—"
         imp = "—"

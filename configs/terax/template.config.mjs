@@ -346,7 +346,7 @@ export default {
      "Снимка 7 на автомобила"
     ]
    ],
-   "note": "на части 0899955529 Виж всички обяви в terax.bazar.bg и terax.mobile.bg Контакти с продавача ТЕРАКС",
+   "note": "на части 0899955529.",
    "equipment": [
     "Auto Start Stop function",
     "Бордкомпютър",
@@ -396,7 +396,7 @@ export default {
      "Снимка 5 на автомобила"
     ]
    ],
-   "note": "2ad5125571 двигател Виж всички обяви в terax.bazar.bg и terax.mobile.bg Контакти с продавача ТЕРАКС"
+   "note": "2ad5125571 двигател."
   },
   {
    "id": "05",
@@ -443,7 +443,7 @@ export default {
      "Снимка 7 на автомобила"
     ]
    ],
-   "note": "Пали и върви. Виж всички обяви в terax.bazar.bg и terax.mobile.bg Контакти с продавача ТЕРАКС",
+   "note": "Пали и върви.",
    "equipment": [
     "Bluetooth \\ handsfree система",
     "USB, audio\\video, IN\\AUX изводи",
@@ -492,7 +492,7 @@ export default {
      "Снимка 4 на автомобила"
     ]
    ],
-   "note": "10 DYUK 4020703 двигател 20 MB160489955 скорости Виж всички обяви в terax.bazar.bg и terax.mobile.bg Контакти с продавача"
+   "note": "10 DYUK 4020703 двигател 20 MB160489955 скорости."
   }
  ],
  "images": {

@@ -260,7 +260,7 @@ export default {
      "Снимка 8 на автомобила"
     ]
    ],
-   "note": "Очакван внос от северна Италия Виж всички обяви в rs-automobile.bazar.bg и rs-automobile.mobile.bg Контакти с продавача RS-Automobile Ltd"
+   "note": "Очакван внос от северна Италия."
   },
   {
    "id": "03",
@@ -361,7 +361,7 @@ export default {
      "Снимка 8 на автомобила"
     ]
    ],
-   "note": "Нов внос от Италия Виж всички обяви в rs-automobile.bazar.bg и rs-automobile.mobile.bg Контакти с продавача RS-Automobile Ltd"
+   "note": "Нов внос от Италия."
   },
   {
    "id": "05",
@@ -412,7 +412,7 @@ export default {
      "Снимка 8 на автомобила"
     ]
    ],
-   "note": "Нов внос от северна Италия Виж всички обяви в rs-automobile.bazar.bg и rs-automobile.mobile.bg Контакти с продавача RS-Automobile Ltd"
+   "note": "Нов внос от северна Италия."
   },
   {
    "id": "06",

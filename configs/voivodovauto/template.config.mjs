@@ -215,7 +215,7 @@ export default {
      "Снимка 8 на автомобила"
     ]
    ],
-   "note": "Колата е в много добро състояние на реални километри с още един чифт гуми и с два ключа Виж всички обяви в voivodovauto.bazar.bg и voivodovauto.mobile.bg Контакти с продавача VOIVODOV AUTO & ANTONIO",
+   "note": "Колата е в много добро състояние на реални километри с още един чифт гуми и с два ключа.",
    "equipment": [
     "Bluetooth \\ handsfree система",
     "Steptronic, Tiptronic",
@@ -555,7 +555,7 @@ export default {
      "Снимка 8 на автомобила"
     ]
    ],
-   "note": "Колата е обслужвана и няма никакви забележки Виж всички обяви в voivodovauto.bazar.bg и voivodovauto.mobile.bg Контакти с продавача VOIVODOV AUTO & ANTONIO",
+   "note": "Колата е обслужвана и няма никакви забележки.",
    "equipment": [
     "Датчик за светлина",
     "Климатик",

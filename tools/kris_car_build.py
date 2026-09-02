@@ -8,6 +8,8 @@ dealer's own public profiles (mobile.bg contacts tab, Facebook page, cars.bg), o
 process wording that is true for any dealer. No invented claims.
 """
 import json, os, re, shutil, subprocess, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from clean_note import clean_note
 from datetime import date
 from PIL import Image
 import numpy as np
@@ -137,7 +139,7 @@ def main():
         hay = (title + " " + c.get("note_full", "")).lower()
         fuel = (c.get("fuel") or "").strip()
         power = (c.get("power") or "").strip()
-        note = (c.get("note") or "").strip()
+        note = clean_note(c.get("note") or "")
         entry = {
             "id": cid, "title": title, "brand": brand, "model": model,
             "body": (c.get("body") or "Автомобил").strip(),

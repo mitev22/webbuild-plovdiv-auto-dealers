@@ -215,7 +215,7 @@ export default {
      "Снимка 8 на автомобила"
     ]
    ],
-   "note": "&#128663; CAR GUYS IMPORTS Mercedes-AMG GT 43 4MATIC+ | 2021 | 3. 0 Turbo | 367 к. с. | 35 884 км Представяме Ви Mercedes-AMG GT 43 4MATIC+ 4-Door, модел 2021 г. , с 3. 0-литров 6-цилиндров Turbo бензинов двигател с 367 к. с.",
+   "note": "🚗 CAR GUYS IMPORTS Mercedes-AMG GT 43 4MATIC+ | 2021 | 3.0 Turbo | 367 к. с. | 35 884 км Представяме Ви Mercedes-AMG GT 43 4MATIC+ 4-Door, модел 2021 г, с 3.0-литров 6-цилиндров Turbo бензинов двигател с 367 к. с.",
    "equipment": [
     "360 camera \\ Задна камера",
     "Apple CarPlay \\ Android Auto",
@@ -299,7 +299,7 @@ export default {
      "Снимка 8 на автомобила"
     ]
    ],
-   "note": "&#128663; CAR GUYS IMPORTS Porsche 911 Carrera 4 (992) | 2020 | 3. 0 Flat-6 Twin-Turbo | 385 к. с. | AWD | 44 611 км Представяме Ви Porsche 911 Carrera 4 (992), модел 2020 г. , с 3. 0-литров 6-цилиндров Twin-Turbo бензинов двигател с 385 к. с.",
+   "note": "🚗 CAR GUYS IMPORTS Porsche 911 Carrera 4 (992) | 2020 | 3.0 Flat-6 Twin-Turbo | 385 к. с. | AWD | 44 611 км Представяме Ви Porsche 911 Carrera 4 (992), модел 2020 г, с 3.0-литров 6-цилиндров Twin-Turbo бензинов двигател с 385 к. с.",
    "equipment": [
     "360 camera \\ Задна камера",
     "Apple CarPlay \\ Android Auto",
@@ -364,7 +364,7 @@ export default {
      "Снимка 8 на автомобила"
     ]
    ],
-   "note": "&#128663; CAR GUYS IMPORTS BMW M5 Competition | 2021 | 4. 4 V8 Twin-Turbo | 625 к. с. | xDrive | 15 086 км Представяме Ви BMW M5 Competition (F90), модел 2021 г. , с мощен 4. 4-литров V8 Twin-Turbo бензинов двигател с 625 к. с.",
+   "note": "🚗 CAR GUYS IMPORTS BMW M5 Competition | 2021 | 4.4 V8 Twin-Turbo | 625 к. с. | xDrive | 15 086 км Представяме Ви BMW M5 Competition (F90), модел 2021 г, с мощен 4.4-литров V8 Twin-Turbo бензинов двигател с 625 к. с.",
    "equipment": [
     "360 camera \\ Задна камера",
     "Apple CarPlay \\ Android Auto",
@@ -429,7 +429,7 @@ export default {
      "Снимка 8 на автомобила"
     ]
    ],
-   "note": "&#128663; CAR GUYS IMPORTS Mercedes-Benz E 220d 4MATIC AMG Line | 2020 | 2. 0 Diesel | 194 к. с. | 4MATIC | 26 984 км Представяме Ви Mercedes-Benz E 220d 4MATIC AMG Line, модел 2020 г. (21-ва моделна година), с 2. 0-литров дизелов двигател с 194 к. с.",
+   "note": "🚗 CAR GUYS IMPORTS Mercedes-Benz E 220d 4MATIC AMG Line | 2020 | 2.0 Diesel | 194 к. с. | 4MATIC | 26 984 км Представяме Ви Mercedes-Benz E 220d 4MATIC AMG Line, модел 2020 г. (21-ва моделна година), с 2.0-литров дизелов двигател с 194 к.",
    "equipment": [
     "360 camera \\ Задна камера",
     "Apple CarPlay \\ Android Auto",
@@ -494,7 +494,7 @@ export default {
      "Снимка 8 на автомобила"
     ]
    ],
-   "note": "&#128663; CAR GUYS IMPORTS Mercedes-Benz E 220d Avantgarde | 2019 | 2. 0 Diesel | 194 к. с. | RWD | 134 194 км Представяме Ви Mercedes-Benz E 220d Avantgarde, модел 2019 г. , с 2. 0-литров дизелов двигател с 194 к. с.",
+   "note": "🚗 CAR GUYS IMPORTS Mercedes-Benz E 220d Avantgarde | 2019 | 2.0 Diesel | 194 к. с. | RWD | 134 194 км Представяме Ви Mercedes-Benz E 220d Avantgarde, модел 2019 г, с 2.0-литров дизелов двигател с 194 к. с.",
    "equipment": [
     "360 camera \\ Задна камера",
     "Apple CarPlay \\ Android Auto",
@@ -559,7 +559,7 @@ export default {
      "Снимка 8 на автомобила"
     ]
    ],
-   "note": "&#128663; CAR GUYS IMPORTS Mercedes-Benz GLE 400 | 2018 | 3. 0 V6 Biturbo | 333 к. с. | 77, 115 км Представяме Ви Mercedes-Benz GLE 400, модел 2018 г. , с 3. 0-литров V6 Biturbo бензинов двигател с 333 к. с.",
+   "note": "🚗 CAR GUYS IMPORTS Mercedes-Benz GLE 400 | 2018 | 3.0 V6 Biturbo | 333 к. с. | 77, 115 км Представяме Ви Mercedes-Benz GLE 400, модел 2018 г, с 3.0-литров V6 Biturbo бензинов двигател с 333 к. с.",
    "equipment": [
     "Auto Start Stop function",
     "Bluetooth \\ handsfree система",

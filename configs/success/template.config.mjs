@@ -215,7 +215,7 @@ export default {
      "Снимка 8 на автомобила"
     ]
    ],
-   "note": "Лизинг без доказване на доходи ! !! Само срещу лична карта ! !! Виж всички обяви в success.bazar.bg и success.mobile.bg Контакти с продавача Success Automobile",
+   "note": "Лизинг без доказване на доходи! Само срещу лична карта!",
    "equipment": [
     "360 camera \\ Задна камера",
     "Apple CarPlay \\ Android Auto",
@@ -299,7 +299,7 @@ export default {
      "Снимка 8 на автомобила"
     ]
    ],
-   "note": "Лизинг без доказване на доходи ! !! Само срещу лична карта ! !! ! Виж всички обяви в success.bazar.bg и success.mobile.bg Контакти с продавача Success Automobile",
+   "note": "Лизинг без доказване на доходи! Само срещу лична карта!",
    "equipment": [
     "Apple CarPlay \\ Android Auto",
     "Auto Start Stop function",
@@ -364,7 +364,7 @@ export default {
      "Снимка 8 на автомобила"
     ]
    ],
-   "note": "Лизинг без доказване на доходи ! !! Само срещу лична карта ! !! Виж всички обяви в success.bazar.bg и success.mobile.bg Контакти с продавача Success Automobile",
+   "note": "Лизинг без доказване на доходи! Само срещу лична карта!",
    "equipment": [
     "360 camera \\ Задна камера",
     "Apple CarPlay \\ Android Auto",
@@ -429,7 +429,7 @@ export default {
      "Снимка 8 на автомобила"
     ]
    ],
-   "note": "Лизинг без доказване на доходи ! ! ! Само срещу лична карта ! ! ! Виж всички обяви в success.bazar.bg и success.mobile.bg Контакти с продавача Success Automobile",
+   "note": "Лизинг без доказване на доходи! Само срещу лична карта!",
    "equipment": [
     "Apple CarPlay \\ Android Auto",
     "Auto Start Stop function",
@@ -494,7 +494,7 @@ export default {
      "Снимка 8 на автомобила"
     ]
    ],
-   "note": "Лизинг без доказване на доходи ! !! Само срещу лична карта ! !! ! Виж всички обяви в success.bazar.bg и success.mobile.bg Контакти с продавача Success Automobile",
+   "note": "Лизинг без доказване на доходи! Само срещу лична карта!",
    "equipment": [
     "360 camera \\ Задна камера",
     "Apple CarPlay \\ Android Auto",
@@ -559,7 +559,7 @@ export default {
      "Снимка 8 на автомобила"
     ]
    ],
-   "note": "Лизинг без доказване на доходи ! !! Само срещу лична карта ! !! Виж всички обяви в success.bazar.bg и success.mobile.bg Контакти с продавача Success Automobile",
+   "note": "Лизинг без доказване на доходи! Само срещу лична карта!",
    "equipment": [
     "Apple CarPlay \\ Android Auto",
     "Auto Start Stop function",
