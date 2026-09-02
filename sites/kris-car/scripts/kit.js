@@ -203,7 +203,14 @@
       btns.forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.theme === slug)); });
       if (store) { try { localStorage.setItem(KEY, slug); } catch (e) {} }
     }
-    btns.forEach(function (b) { b.addEventListener("click", function () { apply(b.dataset.theme, true); }); });
+    btns.forEach(function (b) { b.addEventListener("click", function () {
+      apply(b.dataset.theme, true);
+      var dot = bar.querySelector(".tb i"); if (dot && b.dataset.brass) dot.style.background = b.dataset.brass;
+      setTimeout(function () { bar.classList.add("min"); }, 350);
+    }); });
+    var tb = bar.querySelector("[data-tb-toggle]");
+    if (tb) tb.addEventListener("click", function () { bar.classList.remove("min"); });
+    document.addEventListener("click", function (e) { if (!bar.contains(e.target)) bar.classList.add("min"); });
     /* Key the store on the shipped default, so changing the default in
        template.config.mjs retires any choice a visitor made against the old one. */
     var shipped = (link.getAttribute("href").match(/theme-([a-z0-9-]+)\.css/) || [, ""])[1];
@@ -214,7 +221,31 @@
     var start = q || saved;
     var known = btns.some(function (b) { return b.dataset.theme === start; });
     apply(known ? start : shipped, false);
+    var cur = btns.filter(function (b) { return b.getAttribute("aria-pressed") === "true"; })[0];
+    var dot0 = bar.querySelector(".tb i"); if (cur && dot0 && cur.dataset.brass) dot0.style.background = cur.dataset.brass;
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", boot);
   else boot();
+})();
+
+/* Home search plate: the model list follows the chosen brand. */
+(function () {
+  var f = document.querySelector("[data-plot]");
+  if (!f) return;
+  var brand = f.querySelector('[name="marka"]'), model = f.querySelector('[name="model"]');
+  if (!brand || !model) return;
+  function sync() {
+    var b = brand.value, keep = false;
+    [].slice.call(model.options).forEach(function (o) {
+      if (!o.value) return;
+      var show = !b || o.getAttribute("data-brand") === b;
+      o.hidden = !show; o.disabled = !show;
+      if (show && o.selected) keep = true;
+    });
+    if (!keep) model.value = "";
+  }
+  brand.addEventListener("change", sync); sync();
+  f.addEventListener("submit", function () {
+    [].slice.call(f.elements).forEach(function (el) { if (el.name && !el.value) el.disabled = true; });
+  });
 })();
