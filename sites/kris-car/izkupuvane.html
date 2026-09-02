@@ -4,8 +4,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Изкупуване на автомобили. Крис Кар</title>
-<meta name="description" content="Изкупуваме автомобили в Пловдив. Оценка на място, плащане в същия ден.">
+<meta name="description" content="Изкупуваме автомобили в Пловдив. Оценка на място след оглед.">
 <meta name="robots" content="noindex,nofollow">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Крис Кар">
+<meta property="og:title" content="Изкупуване на автомобили. Крис Кар">
+<meta property="og:description" content="Изкупуваме автомобили в Пловдив. Оценка на място след оглед.">
+<meta property="og:url" content="https://mitev22.github.io/webbuild-plovdiv-auto-dealers/sites/kris-car/izkupuvane.html">
+<meta property="og:image" content="https://mitev22.github.io/webbuild-plovdiv-auto-dealers/sites/kris-car/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:locale" content="bg_BG">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400&family=Onest:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -22,11 +33,11 @@
 body{font-feature-settings:"locl" 0;}
 </style>
 </head>
-<body>
+<body class="has-callbar">
 <div class="top">
   <div class="l"><a href="tel:+359884541828">0884541828</a><span>Пловдив</span></div>
   <a class="mark" href="index.html"><img src="assets/logo.png" alt="Крис Кар"></a>
-  <div class="r"><span>Оглед след уговорка</span><a href="kontakti.html">Виж на картата</a></div>
+  <div class="r"><span>Отворено всеки ден</span><a href="kontakti.html">Виж на картата</a></div>
   <button class="burger" data-drawer-toggle aria-expanded="false" aria-label="Меню">
     <svg viewBox="0 0 24 16" fill="none"><path d="M1 2h22M1 8h22M1 14h22"/></svg></button>
 </div>
@@ -34,62 +45,106 @@ body{font-feature-settings:"locl" 0;}
 <div class="drawer" data-drawer><a class="" href="nalichnosti.html">Наличности</a><a class="on" href="izkupuvane.html">Изкупуване</a><a class="" href="za-nas.html">За нас</a><a class="" href="kontakti.html">Контакти</a><a href="tel:+359884541828">0884541828</a></div>
 <div class="wrap">
   <header class="page-head">
-    <h1>Приемаме коли за изкупуване и замяна.</h1>
-    <p>Обадете се или пишете. Оценката става след оглед на място в Пловдив.</p>
+    <h1>Изкупуваме и приемаме за замяна.</h1>
+    <p>Оценката става на място в Пловдив след оглед. Ако вземате кола от двора, вашата може да покрие част от цената.</p>
   </header>
   <div class="hero-shot slotimg">
     <span class="stand"><svg viewBox="0 0 480 176" aria-hidden="true"><use href="#car-sedan"/></svg></span>
-    <img src="assets/03-00.webp" alt="Автомобил от наличностите" onerror="this.remove()">
+    <img src="assets/05-00.webp" alt="Автомобил от наличностите на Крис Кар" onerror="this.remove()">
   </div>
 
   <div class="split lean block">
     <div>
       <h2>Как става</h2>
       <div class="steps">
-        <div><b>Обадете се</b><span>Кажете марка, година и пробег на 0884541828.</span></div>
-        <div><b>Оглед</b><span>На място в Пловдив, по уговорка.</span></div>
+        <div><b>Пишете или се обадете</b><span>Марка, модел, година и пробег. Отговаряме в работно време на 0884541828 и 0885232858.</span></div>
+        <div><b>Оглед</b><span>На двора на Цариградско шосе, всеки ден. Ако идвате отдалеч, кажете и ще ви изчакаме.</span></div>
         <div><b>Цена</b><span>Получавате конкретна цена след огледа.</span></div>
         <div><b>Прехвърляне</b><span>Документите се уреждат при нотариус.</span></div>
       </div>
+      <h2 style="margin-top:clamp(28px,3.4vw,48px)">Двата варианта</h2>
+      <div class="rows" style="margin-top:4px">
+        <div><b>Замяна</b><span>Вашата кола се приспада от цената на автомобил от двора.</span></div>
+        <div><b>Изкупуване</b><span>Купуваме я и без да вземате кола от нас.</span></div>
+        <div><b>Документи</b><span>Носете талона и сервизната книжка, ако я имате.</span></div>
+      </div>
     </div>
-    <form class="ask-form" onsubmit="return false">
+    <div class="ask-wrap">
+    <form class="ask-form" data-lead="buy" data-to="office@kriscar-auto.bg" data-tel="tel:+359884541828" data-biz="Крис Кар" novalidate>
       <h3>Изпратете данните на колата</h3>
-      <p class="hint">Нищо от това не е задължително освен телефона. Ако е по-лесно, просто се обадете на 0884541828.</p>
-      <label class="field"><span>Марка и модел</span><input type="text" placeholder="Например BMW 320d Touring"></label>
-      <label class="field"><span>Година и пробег</span><input type="text" placeholder="2018, 168 000 км"></label>
-      <label class="field"><span>Телефон</span><input type="tel" placeholder="08.. ... ..." required></label>
-      <label class="field"><span>Нещо, което да знаем</span><textarea placeholder="Щети, лизинг, сервизна история"></textarea></label>
+      <p class="hint">Задължителен е само телефонът. Запитването отива на office@kriscar-auto.bg. Ако е по-лесно, просто се обадете на 0884541828.</p>
+      <label class="field"><span>Марка и модел</span><input type="text" name="kola" placeholder="Например Skoda Octavia 2.0 TDI"></label>
+      <div class="field2">
+        <label class="field"><span>Година</span><input type="text" name="godina" inputmode="numeric" placeholder="2019"></label>
+        <label class="field"><span>Пробег</span><input type="text" name="probeg" inputmode="numeric" placeholder="168 000 км"></label>
+      </div>
+      <label class="field"><span>Телефон</span><input type="tel" name="telefon" placeholder="08.. ... ..." required></label>
+      <label class="field"><span>Нещо, което да знаем</span><textarea name="bel" placeholder="Щети, лизинг, сервизна история, искате ли замяна"></textarea></label>
+      <p class="err" data-err hidden>Оставете телефон, за да ви се обадим.</p>
       <button class="solid" type="submit">Изпрати за оценка</button>
     </form>
+    <div class="sent" data-sent hidden>
+      <h3>Готово. Съобщението е подготвено.</h3>
+      <p>Отвори се пощата ви с попълнените данни. Натиснете „Изпрати“ там. Ако предпочитате друг канал, същото съобщение е готово и за:</p>
+      <div class="ways">
+        <a class="solid" data-way="mail" href="#">Имейл</a>
+        <a class="line" data-way="viber" href="#">Viber</a>
+        <a class="line" data-way="sms" href="#">SMS</a>
+      </div>
+      <p class="msg" data-preview></p>
+      <button type="button" class="again" data-again>Поправи данните</button>
+    </div>
+    </div>
   </div>
+  
+  <section class="swap block">
+    <h2>Замяна срещу кола от двора</h2>
+    <p class="lead">Вашият автомобил се приспада от цената. Изберете от 52 автомобила на сайта и елате с двете коли на оглед.</p>
+    <div class="swap-grid">
+      <a class="mi" href="avtomobil-01.html">
+        <div class="pic slotimg"><span class="stand"><svg viewBox="0 0 480 176" aria-hidden="true"><use href="#car-sedan"/></svg></span><img src="assets/01-t.webp" alt="VW Arteon С-Гаранция-А/Т-190кс" loading="lazy" onerror="this.remove()"></div>
+        <div class="t"><h3>VW Arteon С-Гаранция-А/Т-190кс</h3><span class="p tnum">25 460 €</span></div>
+        <p class="s tnum">2020<i></i>94 910 км</p></a>
+      <a class="mi" href="avtomobil-02.html">
+        <div class="pic slotimg"><span class="stand"><svg viewBox="0 0 480 176" aria-hidden="true"><use href="#car-suv"/></svg></span><img src="assets/02-t.webp" alt="Skoda Karoq 2.0TDI-А/Т" loading="lazy" onerror="this.remove()"></div>
+        <div class="t"><h3>Skoda Karoq 2.0TDI-А/Т</h3><span class="p tnum">20 860 €</span></div>
+        <p class="s tnum">2017<i></i>115 379 км</p></a>
+      <a class="mi" href="avtomobil-03.html">
+        <div class="pic slotimg"><span class="stand"><svg viewBox="0 0 480 176" aria-hidden="true"><use href="#car-suv"/></svg></span><img src="assets/03-t.webp" alt="Dacia Dokker N1-M/T 1.5 DCI" loading="lazy" onerror="this.remove()"></div>
+        <div class="t"><h3>Dacia Dokker N1-M/T 1.5 DCI</h3><span class="p tnum">12 660 €</span></div>
+        <p class="s tnum">2019<i></i>121 049 км</p></a>
+    </div>
+    <div class="all-in"><a class="go" href="nalichnosti.html">Всички 52 автомобила на сайта</a></div>
+  </section>
 </div>
 
 <section class="close">
   <div class="close-in">
     <div>
       <h2 class="thin">Имате кола за замяна?</h2>
-      <p>Автокъщата приема автомобили за изкупуване и замяна. Обадете се за оценка.</p>
+      <p>Имате кола за продажба или за замяна? Оценяваме я на място на двора в Пловдив.</p>
       <a class="go" href="izkupuvane.html">Пишете ни за оценка</a>
     </div>
     <div class="lines">
-      <div><b>Оглед</b><span>На място в Пловдив, по уговорка.</span></div>
-      <div><b>Снимки</b><span>Всички снимки са на конкретната кола.</span></div>
-      <div><b>Връзка</b><span>Телефонът е 0884541828.</span></div>
+      <div><b>Оглед</b><span>Цариградско шосе, до бензиностанция Алпи. Всеки ден.</span></div>
+      <div><b>Гаранция</b><span>Автомобили в гаранция, обслужвани в оторизиран сервиз.</span></div>
+      <div><b>Връзка</b><span>0884541828, 0885232858 и office@kriscar-auto.bg.</span></div>
     </div>
   </div>
 </section>
+<div class="callbar"><span class="p">Оценка по телефона</span><a href="tel:+359884541828">Обади се</a></div>
 <footer class="foot">
   <div class="foot-in">
     <div>
       <b class="w">Крис Кар</b>
-      <p style="margin-top:12px">град Пловдив, Цариградско шосе, до бензиностанция Алпи<br> Пловдив</p>
-      <p style="margin-top:10px"><a href="tel:+359884541828">0884541828</a></p>
+      <p style="margin-top:12px">бул. Цариградско шосе, до бензиностанция Алпи<br> Пловдив</p>
+      <p style="margin-top:10px"><a href="tel:+359884541828">0884541828</a><br><a href="tel:+359885232858">0885232858</a><br><a href="mailto:office@kriscar-auto.bg">office@kriscar-auto.bg</a></p>
     </div>
     <div><h2>Сайт</h2><ul><li><a href="nalichnosti.html">Наличности</a></li><li><a href="izkupuvane.html">Изкупуване</a></li><li><a href="za-nas.html">За нас</a></li><li><a href="kontakti.html">Контакти</a></li></ul></div>
-    <div><h2>Работно време</h2><ul><li>Оглед: Всеки ден след уговорка по телефона</li></ul></div>
+    <div><h2>Работно време</h2><ul><li>Понеделник до петък: 09:00 до 19:00</li><li>Събота: 09:30 до 19:00</li><li>Неделя: 10:00 до 16:00</li></ul></div>
     <div class="legal">
       <span>© 2026 Крис Кар. Автокъща, Пловдив.</span>
-      <span><a href="#">Facebook</a> · <a href="#">Instagram</a></span>
+      <span class="soc"><a href="https://www.facebook.com/KrisCarAuto/" rel="noopener">Facebook</a></span>
     </div>
   </div>
 </footer>
@@ -98,5 +153,6 @@ body{font-feature-settings:"locl" 0;}
   <button type="button" data-theme="pyasak" title="Топъл, тих. Пясъчна земя, кехлибарен акцент."><i style="background:#6E521E"></i>Пясък</button><button type="button" data-theme="grafit" title="Студен и прецизен. Стоманен акцент, повече техника."><i style="background:#33546E"></i>Графит</button><button type="button" data-theme="maslina" title="Дълбоко зелено. Спокойно, малко по-скъпо на вид."><i style="background:#4F6127"></i>Маслина</button><button type="button" data-theme="oksid" title="Костено бяло с ръждив акцент. Най-топлият и най-силният."><i style="background:#8A3D24"></i>Оксид</button>
 </div>
 <script src="scripts/kit.js"></script>
+<script src="scripts/forms.js"></script>
 </body>
 </html>

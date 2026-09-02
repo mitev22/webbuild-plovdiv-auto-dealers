@@ -20,6 +20,8 @@
 .head2 h1 { font-family: var(--display); font-weight: 200; font-size: clamp(28px,3.9vw,52px);
   letter-spacing: -.024em; line-height: 1.08; }
 .head2 .sub { color: var(--mute); margin-top: 16px; max-width: 50ch; }
+.tagrow { display: flex; flex-wrap: wrap; align-items: center; margin-top: 14px; font-size: 13.5px; color: var(--brass); }
+.tagrow i { display: inline-block; width: 1px; height: 12px; background: var(--edge); margin: 0 10px; }
 .ask { border-top: 1px solid var(--ink); padding-top: 18px; }
 .ask .price { font-family: var(--display); font-weight: 300; font-size: clamp(32px,4.2vw,50px);
   letter-spacing: -.026em; line-height: 1; }

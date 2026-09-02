@@ -38,7 +38,30 @@ form.ask-form .solid { margin-top: 20px; width: 100%; }
 .hours > div { display: grid; grid-template-columns: 1fr auto; gap: 16px; padding: 12px 0;
   border-bottom: 1px solid var(--edge2); }
 .hours span:last-child { font-variant-numeric: tabular-nums; color: var(--mute); }
-@media (max-width: 1000px) { .contact-grid { grid-template-columns: 1fr; } }
+.field2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+form.ask-form .err { color: #8A3D24; font-size: 14px; margin-top: 12px; }
+.sent { background: var(--card); border: 1px solid var(--edge); padding: clamp(20px,2.8vw,34px); }
+.sent h3 { font-family: var(--display); font-weight: 300; font-size: 20px; letter-spacing: -.018em; }
+.sent p { color: var(--mute); font-size: 15px; margin-top: 10px; }
+.sent .ways { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 18px; }
+.sent .ways a { padding: 13px 10px; font-size: 13px; }
+.sent .msg { white-space: pre-line; color: var(--ink); font-size: 14.5px; border-top: 1px solid var(--edge2);
+  margin-top: 18px; padding-top: 14px; }
+.sent .again { background: none; border: 0; padding: 0; margin-top: 16px; cursor: pointer;
+  font-family: var(--display); font-weight: 300; font-size: 15px; border-bottom: 1px solid var(--brass); }
+.swap h2 { font-family: var(--display); font-weight: 300; font-size: clamp(21px,2.6vw,32px);
+  letter-spacing: -.02em; padding-bottom: 12px; border-bottom: 1px solid var(--edge); }
+.swap p.lead { color: var(--mute); margin-top: 14px; max-width: 54ch; }
+.swap-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: clamp(12px,1.6vw,22px); padding-top: clamp(18px,2.2vw,30px); }
+.swap .mi .pic { position: relative; aspect-ratio: 16/9; background: linear-gradient(180deg,#E4DACA,#C8BCA5); }
+.swap .mi .t { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding-top: 12px; }
+.swap .mi h3 { font-size: 16.5px; font-weight: 600; }
+.swap .mi .p { font-family: var(--display); font-weight: 300; font-size: 18px; letter-spacing: -.02em; white-space: nowrap; }
+.swap .mi .s { margin-top: 6px; font-size: 13.5px; color: var(--mute); display: flex; align-items: center; }
+.swap .mi .s i { display: inline-block; width: 1px; height: 11px; background: var(--edge); margin: 0 9px; }
+.swap .all-in { display: flex; justify-content: center; padding-top: clamp(22px,2.6vw,36px); }
+@media (max-width: 1000px) { .contact-grid { grid-template-columns: 1fr; } .swap-grid { grid-template-columns: repeat(2,1fr); } }
 @media (max-width: 620px) { .steps > div, .hours > div { grid-template-columns: 1fr; gap: 4px; }
+  .swap-grid { grid-template-columns: 1fr; } .sent .ways { grid-template-columns: 1fr; } .field2 { grid-template-columns: 1fr; }
   .pricelist > div { grid-template-columns: 1fr; gap: 4px; }
   .pricelist b { white-space: normal; text-align: left; } }
